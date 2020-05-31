@@ -1,6 +1,6 @@
 {
   "name": "@devskope/use-mui-theme",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Returns a custom material-ui theme and a callback to modify the theme value",
   "main": "lib/index.js",
   "module": "lib/index.mjs",

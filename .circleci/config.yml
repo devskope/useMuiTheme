@@ -19,6 +19,9 @@ jobs:
             - run: npm test
             - run: npm run coverage
             - run: ./cc-test-reporter after-build -t lcov -d --exit-code $?
+            - run: npm install react react-dom
+            - run: npm install
+            - run: npm test
 workflows:
   test:
     jobs:

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 const useMuiTheme = (initialConfig = {}) => {

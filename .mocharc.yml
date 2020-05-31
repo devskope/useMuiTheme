@@ -1,0 +1,7 @@
+exit: true
+recursive: true
+spec: 'test/*test.js'
+require:
+  - '@babel/register'
+  - 'test/utils/setup'
+  - 'test/utils/jsdom'

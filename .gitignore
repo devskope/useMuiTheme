@@ -1,0 +1,6 @@
+node_modules
+coverage
+.nyc*
+.DS_Store
+lib
+

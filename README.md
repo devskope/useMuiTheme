@@ -1,5 +1,7 @@
 # useMuiTheme
 
+[![CircleCI](https://circleci.com/gh/devskope/useMuiTheme.svg?style=shield)](https://circleci.com/gh/devskope/useMuiTheme)
+
 A react hook to create and modify [material-ui themes](https://material-ui.com/customization/theming/#theming).
 
 # Usage

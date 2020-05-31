@@ -12,6 +12,7 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "babel --delete-dir-on-start --copy-files --env-name esm --out-file-extension .mjs src --out-dir lib",
     "build:cjs": "babel  --env-name cjs src --out-dir lib",
+    "coverage": "nyc --reporter=lcov --reporter=text mocha",
     "test": "nyc mocha"
   },
   "nyc": {

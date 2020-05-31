@@ -1,6 +1,7 @@
 # useMuiTheme
 
-[![CircleCI](https://circleci.com/gh/devskope/useMuiTheme.svg?style=shield)](https://circleci.com/gh/devskope/useMuiTheme)
+[![CircleCI](https://circleci.com/gh/devskope/useMuiTheme.svg?style=shield)](https://circleci.com/gh/devskope/useMuiTheme) &nbsp;
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/devskope/useMuiTheme/maintainability) &nbsp; [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/devskope/useMuiTheme/test_coverage)
 
 A react hook to create and modify [material-ui themes](https://material-ui.com/customization/theming/#theming).
 

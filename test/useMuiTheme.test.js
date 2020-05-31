@@ -63,3 +63,42 @@ describe('useMuiTheme init', () => {
     expect(name).to.equal(hookConfig.themeOptions.name);
   });
 });
+
+describe('useMuiTheme setter', () => {
+  it('should pass setTheme to child', () => {
+    const childSetterRef = React.createRef();
+    const getThemeSetter = () => childSetterRef.current;
+
+    const wrapper = mount(
+      <TestApp>
+        <TestChild setterRef={childSetterRef} />
+      </TestApp>
+    );
+
+    const themeSetter = getThemeSetter();
+
+    expect(typeof themeSetter).equals('function');
+  });
+
+  it('modify theme from child', () => {
+    const hookConfig = config.darkConfig;
+    const childSetterRef = React.createRef();
+    const hookRef = React.createRef();
+
+    const getTheme = () => hookRef.current;
+
+    const wrapper = mount(
+      <TestApp hookRef={hookRef}>
+        <TestChild setterRef={childSetterRef} />
+      </TestApp>
+    );
+
+    wrapper.find('button').invoke('onClick')();
+
+    const theme = getTheme();
+
+    expect(theme.palette.type).to.equal(hookConfig.themeOptions.palette.type);
+
+    wrapper.find('button').parent().props().setTheme(); // set without args:  reset.
+  });
+});
